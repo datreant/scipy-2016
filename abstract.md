@@ -7,9 +7,9 @@ datreant: persistent, Pythonic trees for heterogeneous data
 
 Authors
 -------
-David L. Dotson     david.dotson@asu.edu
-Sean L. Seyler      sean.seyler@asu.edu
-Oliver Beckstein    oliver.beckstein@asu.edu
+- David L. Dotson     david.dotson@asu.edu
+- Sean L. Seyler      sean.seyler@asu.edu
+- Oliver Beckstein    oliver.beckstein@asu.edu
 
 Abstract (approx. 100 words)
 ----------------------------
