@@ -9,8 +9,9 @@ Authors
 -------
 - David L. Dotson     (david.dotson@asu.edu)
 - Sean L. Seyler      (sean.seyler@asu.edu)
+- Max Linke           (max.linke@biophys.mpg.de)
+- Richard Gowers      (richardjgowers@gmail.com)
 - Oliver Beckstein    (oliver.beckstein@asu.edu)
-
 
 Target track
 ------------
