@@ -37,45 +37,42 @@ Long Description (approx. 200-500 words)
 > are encouraged.
 
 In many fields of science, especially those analyzing experimental or
-simulation data, there is often an existing ecosystem of specialized tools and
-file formats which new tools must work around, for better or worse.
-Furthermore, centralized database solutions may be suboptimal for data storage
-for a number of reasons, including insufficient hardware infrastructure,
-variety and heterogeneity of raw data, the need for data portability, etc.
-This is particularly the case for fields centered around simulation: simulation
-systems can vary widely in size, composition, rules, paramaters, and starting
-conditions. And with increases in computational power, it is often necessary to
-store intermediate results obtained from large amounts of simulation data so it
-can be accessed and explored interactively.
+simulation data, there is an existing ecosystem of specialized tools and file
+formats which new tools must work around. Often this makes the filesystem serve
+as a de-facto database, with directory trees the zeroth-order data structure
+for scientific data. But it can be tedious and error prone to work with these
+directory trees to retrieve and store datasets.
 
-The result of this state of affairs is that the filesystem often serves as a
-de-facto database for scientific projects, and directory trees the zeroth-order
-data structure for scientific data. But it can be tedious and error prone to
-work with these directory trees directly from the shell or from Python scripts
-that operate on hard-coded paths. There is almost certainly a better way.
-
-To address this problem, we present **datreant**. datreant makes working with
-directory structures and files Pythonic, and in particular it introduces
+To address this problem, we present [**datreant**](http://datreant.org/).
+datreant makes working with directory structures and files Pythonic with
 **Treants**: specially marked directories with distinguishing characteristics
-that can be discovered, queried, and filtered. 
+that can be discovered, queried, and filtered.
 
-Named after the walking, talking trees of D&D lore, Treants make it easy to
-quickly gather up results from many studies scattered throughout a filesystem,
-operate on their stored data based on their characteristics, and store results
-again as necessary within their directory trees. datreant also gives Tree and
-Leaf classes for granular manipulation of individual directories and files,
-respectively, in addition to Bundles and Views for working with many Treants,
-Trees, and Leaves as a collective.
+Treants make it easy to quickly gather up results from many studies scattered
+throughout a filesystem, operate on their stored data based on their
+characteristics, and store results again as necessary within their directory
+trees. datreant also gives Tree and Leaf classes for granular manipulation of
+individual directories and files, respectively, in addition to Bundles and
+Views for working with many Treants, Trees, and Leaves as a collective.
 
-**datreant** is a namespace package, with the core components available from
-the [datreant.core](https://github.com/datreant/datreant.core) module. All
-the core datreant objects are extendable with specialized limbs supplied by
-other datreant subpackages; an example of this is
+[**datreant**](http://datreant.org) is a namespace package, with the core
+components available from the
+[datreant.core](https://github.com/datreant/datreant.core) module. All core
+datreant objects are extendable; an example of this is
 [datreant.data](https://github.com/datreant/datreant.data), which provides a
 convenience interface for storing and retrieving `numpy` and `pandas` data
 structures in HDF5 using h5py and PyTables internally.
 
+**datreant** is also designed with specialized applications for data management
+in mind. [**MDSynthesis**](https://github.com/datreant/MDSynthesis) is built on
+top of datreant, and makes working with molecular dynamics (MD) simulation data
+easier with **Sim** objects. These are **Treants** that use
+[MDAnalysis](http://www.mdanalysis.org/) to dissect MD trajectories, with
+mechanisms for storing system definitions and custom atom selections. These
+make it possible to write maintainable analysis code that works across many
+simulation variants.
+
 All current datreant subpackages are openly developed and freely available
 under a BSD 3-clause license. More information on how to use the software,
-as well as how to get involved, can be found on the datreant website:
-http://datreant.org/
+as well as how to get involved, can be found on the [datreant
+website](http://datreant.org/).
