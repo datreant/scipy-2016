@@ -36,29 +36,23 @@ Long Description (approx. 200-500 words)
 > repositories, figures, full papers, and evidence of public speaking ability
 > are encouraged.
 
-In many fields of science, especially those analyzing experimental or
-simulation data, there is often an existing ecosystem of specialized tools and
-file formats which new tools must work around, for better or worse.
-Furthermore, centralized database solutions may be suboptimal for data storage
-for a number of reasons, including insufficient hardware infrastructure,
-variety and heterogeneity of raw data, the need for data portability, etc.
-This is particularly the case for fields centered around simulation: simulation
-systems can vary widely in size, composition, rules, paramaters, and starting
-conditions. And with increases in computational power, it is often necessary to
-store intermediate results obtained from large amounts of simulation data so it
-can be accessed and explored interactively.
+<!-- Shortly introduce the problem datreant solves -->
+In many fields of science one has to store various different kinds of data
+,MD-simulation, experimental data and analysis, related to a project. Often the
+filesystem serves as a de-facto database for scientific projects, and directory
+trees are the zeroth-order data structure for scientific data. But it can be
+tedious and error prone to work with these directory trees.
 
-The result of this state of affairs is that the filesystem often serves as a
-de-facto database for scientific projects, and directory trees the zeroth-order
-data structure for scientific data. But it can be tedious and error prone to
-work with these directory trees directly from the shell or from Python scripts
-that operate on hard-coded paths. There is almost certainly a better way.
+<!-- Introduce datreant -->
+To address this problem, we present [**datreant**][datreant]. datreant makes
+working with directory structures and files Pythonic by using **Treants**:
+specially marked directories with distinguishing characteristics that can be
+discovered, queried, and filtered.
 
-To address this problem, we present **datreant**. datreant makes working with
-directory structures and files Pythonic, and in particular it introduces
-**Treants**: specially marked directories with distinguishing characteristics
-that can be discovered, queried, and filtered. 
-
+<!-- Give a rough overview of what can be done. -->
+<!-- This should talk about aggregate and filter methods concretelly. You are
+introducing new ords that are specific to datreant (Bundle, View). These should
+be explained a little bit otherwise it might leave people confused -->
 Named after the walking, talking trees of D&D lore, Treants make it easy to
 quickly gather up results from many studies scattered throughout a filesystem,
 operate on their stored data based on their characteristics, and store results
@@ -67,15 +61,24 @@ Leaf classes for granular manipulation of individual directories and files,
 respectively, in addition to Bundles and Views for working with many Treants,
 Trees, and Leaves as a collective.
 
-**datreant** is a namespace package, with the core components available from
-the [datreant.core](https://github.com/datreant/datreant.core) module. All
-the core datreant objects are extendable with specialized limbs supplied by
-other datreant subpackages; an example of this is
-[datreant.data](https://github.com/datreant/datreant.data), which provides a
-convenience interface for storing and retrieving `numpy` and `pandas` data
-structures in HDF5 using h5py and PyTables internally.
+<!-- Go into details of implementation -->
+[**datreant**][datreant] is a namespace package, with the core components
+available from the [datreant.core][datreant.core] module. All the core datreant
+objects are extendable; an example of this is [datreant.data][datreant.data],
+which provides a convenience interface for storing and retrieving `numpy` and
+`pandas` data structures in HDF5 using h5py and PyTables internally.
 
-All current datreant subpackages are openly developed and freely available
-under a BSD 3-clause license. More information on how to use the software,
-as well as how to get involved, can be found on the datreant website:
-http://datreant.org/
+<!-- Show of general usability of the library with MDSynthesis as example -->
+It is also easy to build other applications for data-management on of
+[**datreant**][datreant]. We have already build a new library to manage
+molecular dynamics data called [MDSynthesis][MDSynthesis].
+<!-- Extend this paragraph -->
+
+All current datreant subpackages are openly developed and freely available under
+a BSD 3-clause license. More information on how to use the software, as well as
+how to get involved, can be found on the [datreant website][datreant].
+
+[datrant]: http://datreant.org/
+[datreant.core]: https://github.com/datreant/datreant.core
+[datreant.data]: https://github.com/datreant/datreant.data
+[MDSynthesis]: https://github.com/datreant/MDSynthesis
