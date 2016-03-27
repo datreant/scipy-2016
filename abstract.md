@@ -49,14 +49,14 @@ datreant makes working with directory structures and files Pythonic with
 that can be discovered, queried, and filtered.
 
 Treants make it easy to quickly gather up results from many studies scattered
-throughout a filesystem, operate on their stored data based on their
-characteristics, and store results again as necessary within their directory
-trees. datreant also gives Tree and Leaf classes for granular manipulation of
-individual directories and files, respectively, in addition to Bundles and
+throughout a filesystem, operate on their stored data based on their metadata,
+and store results again as necessary within their directory trees.
+datreant also gives Tree and Leaf classes for granular manipulation
+of individual directories and files, respectively, in addition to Bundles and
 Views for working with many Treants, Trees, and Leaves as a collective.
 
 [**datreant**](http://datreant.org) is a namespace package, with the core
-components available from the
+components available in the
 [datreant.core](https://github.com/datreant/datreant.core) module. All core
 datreant objects are extendable; an example of this is
 [datreant.data](https://github.com/datreant/datreant.data), which provides a
@@ -68,11 +68,11 @@ in mind. [**MDSynthesis**](https://github.com/datreant/MDSynthesis) is built on
 top of datreant, and makes working with molecular dynamics (MD) simulation data
 easier with **Sim** objects. These are **Treants** that use
 [MDAnalysis](http://www.mdanalysis.org/) to dissect MD trajectories, with
-mechanisms for storing system definitions and custom atom selections. These
-make it possible to write maintainable analysis code that works across many
+mechanisms for storing system definitions and custom atom selections. This
+makes it possible to write maintainable analysis code that works across many
 simulation variants.
 
 All current datreant subpackages are openly developed and freely available
 under a BSD 3-clause license. More information on how to use the software,
-as well as how to get involved, can be found on the [datreant
+and how to get involved, can be found on the [datreant
 website](http://datreant.org/).
