@@ -9,7 +9,7 @@ The current authors on the proposal are:
 - David Dotson (@dotsdl)
 - Sean Seyler (@sseyler)
 - Max Linke (@kain88-de)
-- Richard Gowers (richardjgowers)
+- Richard Gowers (@richardjgowers)
 - Oliver Beckstein (@orbeckst)
 
 If you are interested in being on the author's list and have contributed to
