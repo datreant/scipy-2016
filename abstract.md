@@ -48,7 +48,7 @@ At the core of datreant is the concept of a **Treant**—a specially marked
 directory with distinguishing characteristics that can be discovered, queried,
 and filtered. In this way, datreant provides a clean, Pythonic approach to
 working with heterogeneous data stored on a filesystem and therefore helps to
-enhance scientific reproducibility.
+enhance productivity and scientific reproducibility.
 
 Treants make it easy to quickly gather results from many studies scattered
 throughout a filesystem, operate on their stored data based on their metadata,
