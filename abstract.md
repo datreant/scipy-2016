@@ -46,16 +46,16 @@ datasets is, however, tedious and prone to error.
 To address this problem, we present [**datreant**](http://datreant.org/).
 At the core of datreant is the concept of a **Treant**—a specially marked
 directory with distinguishing characteristics that can be discovered, queried,
-and filtered. In this way, datreant provides a clean, Pythonic approach to
-working with heterogeneous data stored on a filesystem and therefore helps to
-enhance productivity and scientific reproducibility.
+and filtered. In this way, datreant provides a Pythonic approach to managing
+heterogeneous data stored in a filesystem and therefore helps to enhance
+productivity and scientific reproducibility.
 
 Treants make it easy to quickly gather results from many studies scattered
 throughout a filesystem, operate on their stored data based on their metadata,
-and store intermediate results as necessary within the respective directory trees.
-datreant also provides Tree and Leaf classes for granular manipulation
-of individual directories and files, respectively, as well as Bundles and
-Views for working with aggregations of many Treants, Trees, and Leaves.
+and store intermediate results as necessary within their respective directory
+trees. **datreant** also provides Tree and Leaf classes for granular manipulation
+of individual directories and files, respectively, as well as Bundles and Views
+for working with aggregations of many Treants, Trees, and Leaves.
 
 [**datreant**](http://datreant.org) is a namespace package, with the core
 components available in the
