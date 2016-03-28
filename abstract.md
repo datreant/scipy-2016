@@ -23,18 +23,17 @@ Abstract (approx. 100 words)
 ----------------------------
 > The brief description you fill out below will appear in the online program.
 
-In science the filesystem often serves as a de-facto database, with directory
-trees the zeroth-order data structure for scientific data. But it can be
-tedious and error prone to work with directory trees to retrieve and store
-datasets. **datreant** makes working with directory structures and files
-Pythonic with **Treants**: specially marked directories with distinguishing
-characteristics that can be discovered, queried, and filtered. Treants make it
-easy to quickly gather results from many studies scattered throughout a
-filesystem, operate on their stored data based on their metadata, and store
-results again as necessary within their directory trees. **datreant** also
-allows granular manipulation of individual directories and files and makes
-working with aggregations of many Treants, directories, and files just as
-straightforward.
+In science the filesystem often serves as a *de facto* database, with directory
+trees being the zeroth-order scientific data structure. But it can be tedious
+and error prone to work directly with the filesystem to retrieve and store
+heterogeneous datasets. **datreant** makes working with directory structures
+and files Pythonic with **Treants**: specially marked directories with
+distinguishing characteristics that can be discovered, queried, and filtered.
+Treants can be manipulated individually and in aggregate, with mechanisms for
+granular access to the directories and files in their trees. **datreant** is
+vanilla by design to allow specialized applications to be built on top of it,
+with **MDSynthesis** as an example for working with molecular dynamics
+simulation data.
 
 
 Long Description (approx. 200-500 words)
@@ -52,9 +51,9 @@ Long Description (approx. 200-500 words)
 In many fields of science, especially those analyzing experimental or
 simulation data, there is an existing ecosystem of specialized tools and file
 formats which new tools must work around. Often this makes the filesystem serve
-as a de-facto database, with directory trees the zeroth-order data structure
+as a *de facto* database, with directory trees the zeroth-order data structure
 for scientific data. But it can be tedious and error prone to work with these
-directory trees to retrieve and store datasets.
+directory trees to retrieve and store heterogeneous datasets.
 
 To address this problem, we present [**datreant**](http://datreant.org/).
 At the core of datreant are **Treants**: specially marked directories with
