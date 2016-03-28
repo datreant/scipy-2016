@@ -38,27 +38,27 @@ Long Description (approx. 200-500 words)
 
 In many fields of science, especially those analyzing experimental or
 simulation data, there is an existing ecosystem of specialized tools and file
-formats which new tools must work around. This often makes the filesystem serve
-as a de-facto database, with directory trees being the zeroth-order data structure
-for scientific data. Working directly with directory trees to store and retrieve
-datasets is, however, tedious and prone to error.
+formats which new tools must work around. Often this makes the filesystem serve
+as a de-facto database, with directory trees the zeroth-order data structure
+for scientific data. But it can be tedious and error prone to work with these
+directory trees to retrieve and store datasets.
 
 To address this problem, we present [**datreant**](http://datreant.org/).
-At the core of datreant is the concept of a **Treant**—a specially marked
-directory with distinguishing characteristics that can be discovered, queried,
-and filtered. In this way, datreant provides a Pythonic approach to managing
-heterogeneous data stored in a filesystem and therefore helps to enhance
-productivity and scientific reproducibility.
+At the core of datreant are **Treants**: specially marked directories with
+distinguishing characteristics that can be discovered, queried, and filtered.
+Treants give a Pythonic approach to managing heterogeneous data stored in the
+filesystem and therefore help to enhance productivity and scientific
+reproducibility.
 
 Treants make it easy to quickly gather results from many studies scattered
 throughout a filesystem, operate on their stored data based on their metadata,
-and store intermediate results as necessary within their respective directory
-trees. **datreant** also provides Tree and Leaf classes for granular manipulation
-of individual directories and files, respectively, as well as Bundles and Views
+and store results again as necessary within their directory trees.
+**datreant** also provides Tree and Leaf classes for granular manipulation of
+individual directories and files, respectively, as well as Bundles and Views
 for working with aggregations of many Treants, Trees, and Leaves.
 
 [**datreant**](http://datreant.org) is a namespace package, with the core
-components available in the
+components available in the dependency-light
 [datreant.core](https://github.com/datreant/datreant.core) module. All core
 datreant objects are extendable; an example of this is
 [datreant.data](https://github.com/datreant/datreant.data), which provides a
