@@ -38,22 +38,24 @@ Long Description (approx. 200-500 words)
 
 In many fields of science, especially those analyzing experimental or
 simulation data, there is an existing ecosystem of specialized tools and file
-formats which new tools must work around. Often this makes the filesystem serve
-as a de-facto database, with directory trees the zeroth-order data structure
-for scientific data. But it can be tedious and error prone to work with these
-directory trees to retrieve and store datasets.
+formats which new tools must work around. This often makes the filesystem serve
+as a de-facto database, with directory trees being the zeroth-order data structure
+for scientific data. Working directly with directory trees to store and retrieve
+datasets is, however, tedious and prone to error.
 
 To address this problem, we present [**datreant**](http://datreant.org/).
-datreant makes working with directory structures and files Pythonic with
-**Treants**: specially marked directories with distinguishing characteristics
-that can be discovered, queried, and filtered.
+At the core of datreant is the concept of a **Treant**—a specially marked
+directory with distinguishing characteristics that can be discovered, queried,
+and filtered. In this way, datreant provides a clean, Pythonic approach to
+working with heterogeneous data stored on a filesystem and therefore helps to
+enhance scientific reproducibility.
 
-Treants make it easy to quickly gather up results from many studies scattered
+Treants make it easy to quickly gather results from many studies scattered
 throughout a filesystem, operate on their stored data based on their metadata,
-and store results again as necessary within their directory trees.
-datreant also gives Tree and Leaf classes for granular manipulation
-of individual directories and files, respectively, in addition to Bundles and
-Views for working with many Treants, Trees, and Leaves as a collective.
+and store intermediate results as necessary within the respective directory trees.
+datreant also provides Tree and Leaf classes for granular manipulation
+of individual directories and files, respectively, as well as Bundles and
+Views for working with aggregations of many Treants, Trees, and Leaves.
 
 [**datreant**](http://datreant.org) is a namespace package, with the core
 components available in the
@@ -64,13 +66,13 @@ convenience interface for storing and retrieving `numpy` and `pandas` data
 structures in HDF5 using h5py and PyTables internally.
 
 **datreant** is also designed with specialized applications for data management
-in mind. [**MDSynthesis**](https://github.com/datreant/MDSynthesis) is built on
-top of datreant, and makes working with molecular dynamics (MD) simulation data
-easier with **Sim** objects. These are **Treants** that use
-[MDAnalysis](http://www.mdanalysis.org/) to dissect MD trajectories, with
-mechanisms for storing system definitions and custom atom selections. This
-makes it possible to write maintainable analysis code that works across many
-simulation variants.
+in mind. For working with molecular dynamics (MD) simulation data,
+[**MDSynthesis**](https://github.com/datreant/MDSynthesis)—built on top of
+datreant—streamlines workflow through **Sim** objects. **Sims** are special
+**Treants** that use [MDAnalysis](http://www.mdanalysis.org/) to dissect MD
+trajectories, providing mechanisms for storing system definitions and custom atom
+selections. This makes it possible to write maintainable analysis code that
+works across many simulation variants.
 
 All current datreant subpackages are openly developed and freely available
 under a BSD 3-clause license. More information on how to use the software,
