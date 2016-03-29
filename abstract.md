@@ -31,9 +31,9 @@ and files Pythonic with **Treants**: specially marked directories with
 distinguishing characteristics that can be discovered, queried, and filtered.
 Treants can be manipulated individually and in aggregate, with mechanisms for
 granular access to the directories and files in their trees. **datreant** is
-vanilla by design to allow specialized applications to be built on top of it,
-with **MDSynthesis** as an example for working with molecular dynamics
-simulation data.
+modular and extensible by design to allow specialized applications to be built
+on top of it, with **MDSynthesis** as an example for working with molecular
+dynamics simulation data.
 
 
 Long Description (approx. 200-500 words)
