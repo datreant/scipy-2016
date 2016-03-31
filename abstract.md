@@ -30,10 +30,12 @@ heterogeneous datasets. **datreant** makes working with directory structures
 and files Pythonic with **Treants**: specially marked directories with
 distinguishing characteristics that can be discovered, queried, and filtered.
 Treants can be manipulated individually and in aggregate, with mechanisms for
-granular access to the directories and files in their trees. **datreant** is
-modular and extensible by design to allow specialized applications to be built
-on top of it, with **MDSynthesis** as an example for working with molecular
-dynamics simulation data. http://datreant.org/
+granular access to the directories and files in their trees. Disparate datasets
+stored in any format (CSV, HDF5, NetCDF, Feater, etc.) scattered throughout a
+filesystem can thus be manipulated as meta-datasets of Treants. **datreant**
+is modular and extensible by design to allow specialized applications to be
+built on top of it, with **MDSynthesis** as an example for working with
+molecular dynamics simulation data.  http://datreant.org/
 
 
 Long Description (approx. 200-500 words)
