@@ -100,3 +100,8 @@ scientific questions easier to answer with less time and effort.
 All current datreant subpackages are openly developed and freely available
 under a BSD 3-clause license. More information on how to use the software,
 and how to get involved, can be found at http://datreant.org/
+
+This submission was openly developed on github; the presentation materials
+will also be developed in the same repository:
+https://github.com/datreant/scipy-2016
+
